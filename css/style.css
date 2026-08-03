@@ -1,8 +1,10 @@
-/* =========================
-   SEA FOX MARINE WEBSITE
-   STYLE CSS
-========================= */
+/* =================================
+   SEA FOX MARINE
+   PROFESSIONAL WEBSITE STYLE
+================================= */
 
+
+/* RESET */
 
 *{
     margin:0;
@@ -16,9 +18,10 @@ body{
 
     font-family:Arial, Helvetica, sans-serif;
     color:#1b263b;
-    background:white;
+    background:#ffffff;
 
 }
+
 
 
 .container{
@@ -30,47 +33,30 @@ body{
 }
 
 
-img{
 
-    max-width:100%;
+a{
 
-}
-
-
-h2{
-
-    text-align:center;
-    font-size:42px;
-    color:#003049;
-    margin-bottom:40px;
+    text-decoration:none;
 
 }
 
 
 
-p{
-
-    font-size:18px;
-    line-height:1.8;
-
-}
-
-
-/* =========================
+/* =====================
 HEADER
-========================= */
+===================== */
 
 
 header{
 
     position:fixed;
     top:0;
+    left:0;
     width:100%;
+
+    background:rgba(0,18,35,.92);
+
     z-index:1000;
-
-    background:rgba(0,25,45,.9);
-
-    backdrop-filter:blur(10px);
 
 }
 
@@ -78,7 +64,7 @@ header{
 
 .nav{
 
-    height:90px;
+    height:100px;
 
     display:flex;
     align-items:center;
@@ -90,7 +76,9 @@ header{
 
 .logo img{
 
-    width:80px;
+    width:120px;
+    height:90px;
+    object-fit:contain;
 
 }
 
@@ -108,25 +96,25 @@ nav{
 nav a{
 
     color:white;
-    text-decoration:none;
-    font-size:16px;
+    font-size:17px;
+    font-weight:bold;
+
     transition:.3s;
 
 }
 
 
+
 nav a:hover{
 
-    color:#00bfff;
+    color:#00cfff;
 
 }
 
 
 
 
-.button{
-
-    display:inline-block;
+.btn{
 
     background:#00a8e8;
 
@@ -136,16 +124,17 @@ nav a:hover{
 
     border-radius:30px;
 
-    text-decoration:none;
-
     font-weight:bold;
+
+    display:inline-block;
 
     transition:.3s;
 
 }
 
 
-.button:hover{
+
+.btn:hover{
 
     background:#0077b6;
 
@@ -156,32 +145,39 @@ nav a:hover{
 
 
 
-/* =========================
-HERO
-========================= */
+
+
+
+/* =====================
+HERO COVER
+===================== */
 
 
 .hero{
 
+
     height:100vh;
 
-    background:
+
+    background-image:
 
     linear-gradient(
-    rgba(0,30,60,.75),
-    rgba(0,30,60,.75)
+    rgba(0,20,40,.65),
+    rgba(0,20,40,.65)
     ),
 
-    url("../images/hero.jpg");
+    url("../images/cover.jpg");
 
 
     background-size:cover;
 
     background-position:center;
 
+
     display:flex;
 
     align-items:center;
+
 
 }
 
@@ -189,11 +185,14 @@ HERO
 
 .hero-content{
 
+
     width:90%;
     max-width:1200px;
+
     margin:auto;
 
     color:white;
+
 
 }
 
@@ -201,9 +200,13 @@ HERO
 
 .hero h1{
 
-    font-size:70px;
+
+    font-size:75px;
+
+    font-weight:900;
 
     line-height:1.1;
+
 
 }
 
@@ -211,7 +214,9 @@ HERO
 
 .hero h1 span{
 
+
     color:#00d4ff;
+
 
 }
 
@@ -219,59 +224,87 @@ HERO
 
 .hero p{
 
-    margin:30px 0;
 
-    max-width:650px;
+    margin:35px 0;
 
-    font-size:22px;
+    font-size:23px;
+
+    max-width:700px;
+
+    line-height:1.7;
+
 
 }
 
 
 
 
-/* =========================
+
+
+/* =====================
 SECTIONS
-========================= */
+===================== */
 
 
 .section{
 
-    padding:100px 0;
+
+    padding:100px 10%;
 
     text-align:center;
 
-}
-
-
-
-.section img{
-
-    margin:40px auto;
-
-    border-radius:20px;
-
-    width:500px;
 
 }
 
 
 
-.gray{
+.section h2{
+
+
+    font-size:45px;
+
+    color:#003049;
+
+    margin-bottom:30px;
+
+
+}
+
+
+
+.section p{
+
+
+    font-size:20px;
+
+    line-height:1.8;
+
+
+}
+
+
+
+
+
+/* =====================
+SERVICES
+===================== */
+
+
+.services{
+
 
     background:#f1f7fa;
 
+
 }
 
 
 
-
-/* =========================
-SERVICES
-========================= */
-
-
 .cards{
+
+
+    margin-top:50px;
 
     display:grid;
 
@@ -279,11 +312,13 @@ SERVICES
 
     gap:30px;
 
+
 }
 
 
 
 .card{
+
 
     background:white;
 
@@ -292,9 +327,12 @@ SERVICES
     border-radius:20px;
 
     box-shadow:
-    0 10px 30px rgba(0,0,0,.1);
+
+    0 15px 35px rgba(0,0,0,.1);
+
 
     transition:.3s;
+
 
 }
 
@@ -302,7 +340,9 @@ SERVICES
 
 .card:hover{
 
+
     transform:translateY(-10px);
+
 
 }
 
@@ -310,37 +350,32 @@ SERVICES
 
 .card h3{
 
+
     color:#0077b6;
 
-    font-size:25px;
+    font-size:26px;
 
     margin-bottom:20px;
 
-}
-
-
-
-
-/* =========================
-PROJECTS
-========================= */
-
-
-.project-img{
-
-    width:700px !important;
 
 }
 
 
 
 
-/* =========================
+
+/* =====================
 CONTACT
-========================= */
+===================== */
 
 
 .contact{
+
+
+    padding:100px 20px;
+
+    text-align:center;
+
 
     background:
 
@@ -353,9 +388,6 @@ CONTACT
 
     color:white;
 
-    text-align:center;
-
-    padding:100px 20px;
 
 }
 
@@ -363,35 +395,34 @@ CONTACT
 
 .contact h2{
 
+
     color:white;
-
-}
-
-
-
-.contact p{
 
     margin-bottom:30px;
 
+
 }
 
 
 
 
-/* =========================
+
+/* =====================
 FOOTER
-========================= */
+===================== */
 
 
 footer{
+
 
     background:#001219;
 
     color:white;
 
+    padding:30px;
+
     text-align:center;
 
-    padding:30px;
 
 }
 
@@ -400,10 +431,9 @@ footer{
 
 
 
-
-/* =========================
+/* =====================
 MOBILE
-========================= */
+===================== */
 
 
 @media(max-width:900px){
@@ -417,9 +447,29 @@ nav{
 
 
 
+.logo img{
+
+    width:90px;
+
+}
+
+
+
 .hero h1{
 
-    font-size:42px;
+
+    font-size:45px;
+
+
+}
+
+
+
+.hero p{
+
+
+    font-size:18px;
+
 
 }
 
@@ -427,33 +477,11 @@ nav{
 
 .cards{
 
+
     grid-template-columns:1fr;
 
-}
-
-
-
-}/* =========================
-SCROLL ANIMATION
-========================= */
-
-
-.hidden{
-
-    opacity:0;
-
-    transform:translateY(40px);
-
-    transition:all .8s ease;
 
 }
 
-
-
-.show{
-
-    opacity:1;
-
-    transform:translateY(0);
 
 }
