@@ -1,351 +1,515 @@
-/* ===========================
-   SEA FOX STYLE V1
-=========================== */
+/* =====================================
+   SEA FOX MARINE WEBSITE
+   Main Stylesheet
+===================================== */
 
-*{
+
+/* ===== GLOBAL ===== */
+
+* {
     margin:0;
     padding:0;
     box-sizing:border-box;
-}
-
-html{
     scroll-behavior:smooth;
 }
 
-body{
+
+body {
+
     font-family:'Poppins',sans-serif;
-    background:#fff;
-    color:#222;
-    overflow-x:hidden;
+    background:#ffffff;
+    color:#1b263b;
+
 }
 
-.container{
+
+
+.container {
+
     width:90%;
-    max-width:1300px;
+    max-width:1200px;
     margin:auto;
+
 }
 
-/* ================= HEADER ================= */
 
-header{
+
+img {
+
+    max-width:100%;
+    display:block;
+
+}
+
+
+
+section {
+
+    padding:100px 0;
+
+}
+
+
+
+
+/* ===== BUTTONS ===== */
+
+
+.btn {
+
+    display:inline-block;
+    background:#00a8e8;
+    color:white;
+    padding:14px 32px;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+
+}
+
+
+
+.btn:hover {
+
+    background:#0077b6;
+    transform:translateY(-3px);
+
+}
+
+
+
+.btn-outline {
+
+    display:inline-block;
+    border:2px solid white;
+    color:white;
+    padding:12px 30px;
+    border-radius:40px;
+    text-decoration:none;
+    margin-left:15px;
+    transition:.3s;
+
+}
+
+
+
+.btn-outline:hover {
+
+    background:white;
+    color:#003049;
+
+}
+
+
+
+
+
+/* ===== HEADER ===== */
+
+
+.header {
+
     position:fixed;
     top:0;
     left:0;
     width:100%;
-    z-index:999;
-    background:rgba(0,28,60,.55);
+    z-index:1000;
+    background:rgba(0,20,40,.85);
     backdrop-filter:blur(10px);
-    transition:.4s;
+
 }
 
-header .container{
+
+
+.nav-container {
+
+    height:90px;
     display:flex;
+    align-items:center;
     justify-content:space-between;
-    align-items:center;
-    padding:20px 0;
+
 }
 
-.logo img{
-    height:80px;
-    transition:.4s;
+
+
+.logo img {
+
+    width:75px;
+
 }
 
-.logo img:hover{
-    transform:scale(1.05);
-}
 
-nav{
+
+.nav {
+
     display:flex;
-    align-items:center;
     gap:35px;
+
 }
 
-nav ul{
-    display:flex;
-    list-style:none;
-    gap:35px;
-}
 
-nav ul li a{
-    color:#fff;
+
+.nav a {
+
+    color:white;
     text-decoration:none;
-    font-weight:600;
+    font-size:16px;
+    font-weight:500;
     transition:.3s;
+
 }
 
-nav ul li a:hover{
-    color:#00d5ff;
+
+
+.nav a:hover {
+
+    color:#00bfff;
+
 }
 
-.quote-btn{
-    text-decoration:none;
-    color:#fff;
-    background:#00bcd4;
-    padding:14px 28px;
-    border-radius:40px;
-    transition:.3s;
-}
 
-.quote-btn:hover{
-    background:#0097a7;
-}
 
-/* ================= HERO ================= */
 
-.hero{
+
+/* ===== HERO ===== */
+
+
+.hero {
+
     height:100vh;
-    background:url("cover.jpg") center center/cover no-repeat;
+    background:
+    url("../images/hero.jpg")
+    center/cover no-repeat;
+
     display:flex;
-    justify-content:center;
     align-items:center;
     position:relative;
+
 }
 
-.overlay{
+
+
+.hero-overlay {
+
     position:absolute;
     inset:0;
-    background:rgba(0,20,45,.60);
+
+    background:
+    linear-gradient(
+    90deg,
+    rgba(0,20,40,.95),
+    rgba(0,60,90,.45)
+    );
+
 }
 
-.hero-content{
+
+
+.hero-content {
+
     position:relative;
     z-index:2;
-    text-align:center;
     color:white;
-    max-width:900px;
+    max-width:750px;
+
 }
 
-.hero-content h4{
-    color:#00d4ff;
-    letter-spacing:4px;
-    margin-bottom:20px;
-}
 
-.hero-content h1{
-    font-size:72px;
+
+.hero h1 {
+
+    font-size:65px;
     line-height:1.1;
-    margin-bottom:25px;
     font-weight:800;
+
 }
 
-.hero-content p{
-    font-size:24px;
-    margin-bottom:40px;
-    color:#f2f2f2;
+
+
+.hero h1 span {
+
+    color:#00bfff;
+
 }
 
-.hero-buttons{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
+
+
+.hero p {
+
+    font-size:20px;
+    margin:30px 0;
+    line-height:1.8;
+
 }
 
-.btn1,
-.btn2{
-    padding:18px 40px;
-    border-radius:40px;
-    text-decoration:none;
-    font-weight:700;
-    transition:.3s;
+
+
+
+
+/* ===== SECTION TITLE ===== */
+
+
+.section-title {
+
+    text-align:center;
+    margin-bottom:60px;
+
 }
 
-.btn1{
-    background:#00bcd4;
-    color:white;
+
+
+.section-title h2 {
+
+    font-size:42px;
+    color:#003049;
+
 }
 
-.btn1:hover{
-    background:#0097a7;
-    transform:translateY(-5px);
+
+
+.section-title p {
+
+    color:#666;
+    margin-top:10px;
+
 }
 
-.btn2{
-    border:2px solid white;
-    color:white;
+
+
+
+
+/* ===== ABOUT ===== */
+
+
+.about-content {
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+
 }
 
-.btn2:hover{
+
+
+.about-content p {
+
+    font-size:18px;
+    line-height:1.9;
+    margin-bottom:20px;
+
+}
+
+
+
+.about-content img {
+
+    border-radius:20px;
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+
+
+
+
+/* ===== SERVICES ===== */
+
+
+.services {
+
+    background:#f4f9fc;
+
+}
+
+
+
+.service-grid {
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+
+}
+
+
+
+.service-card {
+
     background:white;
-    color:#003366;
-}
-
-/* ===== Empty Sections ===== */
-
-section{
-    padding:120px 0;
-}
-
-/* ================= MOBILE ================= */
-
-@media(max-width:992px){
-
-nav ul{
-display:none;
-}
-
-.quote-btn{
-display:none;
-}
-
-.hero-content h1{
-font-size:42px;
-}
-
-.hero-content p{
-font-size:18px;
-}
-
-.logo img{
-height:60px;
-}
-
-}/*=========================
-ABOUT
-=========================*/
-
-.about{
-
-background:#ffffff;
-
-padding:120px 0;
+    padding:40px 30px;
+    border-radius:20px;
+    text-align:center;
+    transition:.4s;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
 
 }
 
-.about-container{
 
-display:grid;
 
-grid-template-columns:1fr 1fr;
+.service-card:hover {
 
-gap:70px;
-
-align-items:center;
+    transform:translateY(-10px);
 
 }
 
-.about-image img{
 
-width:100%;
 
-border-radius:20px;
+.service-card h3 {
 
-box-shadow:0 20px 50px rgba(0,0,0,.15);
-
-transition:.4s;
+    color:#003049;
+    margin-bottom:15px;
+    font-size:24px;
 
 }
 
-.about-image img:hover{
 
-transform:scale(1.03);
 
-}
+.service-card p {
 
-.about-content span{
-
-color:#00bcd4;
-
-font-weight:700;
-
-letter-spacing:3px;
+    color:#666;
+    line-height:1.7;
 
 }
 
-.about-content h2{
 
-font-size:48px;
 
-margin:20px 0;
 
-color:#003366;
 
-}
+/* ===== PROJECTS ===== */
 
-.about-content p{
 
-font-size:18px;
+.project-grid {
 
-line-height:1.9;
-
-color:#666;
-
-margin-bottom:30px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
 
 }
 
-.about-list{
 
-display:grid;
 
-grid-template-columns:1fr 1fr;
+.project-grid img {
 
-gap:15px;
-
-margin-bottom:35px;
-
-}
-
-.about-list div{
-
-background:#f5fbff;
-
-padding:18px;
-
-border-left:5px solid #00bcd4;
-
-border-radius:10px;
-
-font-weight:600;
+    height:300px;
+    width:100%;
+    object-fit:cover;
+    border-radius:20px;
+    transition:.4s;
 
 }
 
-.about-btn{
 
-display:inline-block;
 
-padding:18px 40px;
+.project-grid img:hover {
 
-background:#00bcd4;
-
-color:white;
-
-text-decoration:none;
-
-border-radius:40px;
-
-font-weight:bold;
-
-transition:.3s;
+    transform:scale(1.05);
 
 }
 
-.about-btn:hover{
 
-background:#0097a7;
 
-transform:translateY(-5px);
+
+
+/* ===== CONTACT ===== */
+
+
+.contact {
+
+    background:
+    linear-gradient(
+    135deg,
+    #003049,
+    #0077b6
+    );
+
+    color:white;
+    text-align:center;
+
+}
+
+
+
+.contact h2 {
+
+    font-size:42px;
+    margin-bottom:20px;
 
 }
 
-@media(max-width:992px){
 
-.about-container{
 
-grid-template-columns:1fr;
+.contact p {
 
-}
-
-.about-content h2{
-
-font-size:36px;
+    font-size:20px;
+    margin-bottom:30px;
 
 }
 
-.about-list{
 
-grid-template-columns:1fr;
+
+
+
+/* ===== FOOTER ===== */
+
+
+footer {
+
+    background:#001d2e;
+    color:white;
+    text-align:center;
+    padding:30px;
 
 }
+
+
+
+
+
+/* ===== MOBILE ===== */
+
+
+@media(max-width:900px){
+
+
+.nav {
+
+    display:none;
+
+}
+
+
+
+.hero h1 {
+
+    font-size:42px;
+
+}
+
+
+
+.about-content {
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.service-grid {
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.project-grid {
+
+    grid-template-columns:1fr;
+
+}
+
 
 }
