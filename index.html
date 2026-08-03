@@ -1,84 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sea Fox</title>
 
-<style>
+<title>Sea Fox | Diving & Marine Contracting</title>
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+<link rel="stylesheet" href="style.css">
 
-body{
-    font-family:Arial, sans-serif;
-    background:#f5f5f5;
-}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-header{
-    background:#003366;
-    text-align:center;
-    padding:20px;
-}
-
-.logo{
-    width:300px;
-    max-width:90%;
-}
-
-nav{
-    margin-top:20px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:0 15px;
-    font-size:18px;
-    font-weight:bold;
-}
-
-.hero{
-    height:85vh;
-    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
-    url("https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1600&q=80");
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction:column;
-    color:white;
-    text-align:center;
-}
-
-.hero h1{
-    font-size:65px;
-}
-
-.hero p{
-    font-size:28px;
-    margin-top:15px;
-}
-
-.btn{
-    margin-top:30px;
-    padding:15px 35px;
-    background:#00bcd4;
-    color:white;
-    text-decoration:none;
-    border-radius:30px;
-    font-size:20px;
-}
-
-.btn:hover{
-    background:#0097a7;
-}
-
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 </head>
 
@@ -86,27 +21,302 @@ nav a{
 
 <header>
 
-<img src="logo.png.png" class="logo" alt="Sea Fox Logo">
+<div class="container">
+
+<div class="logo">
+
+<img src="images/logo.png" alt="Sea Fox">
+
+</div>
 
 <nav>
+
 <a href="#">Home</a>
-<a href="#">About</a>
-<a href="#">Services</a>
-<a href="#">Gallery</a>
-<a href="#">Contact</a>
+
+<a href="#about">About</a>
+
+<a href="#services">Services</a>
+
+<a href="#gallery">Gallery</a>
+
+<a href="#contact">Contact</a>
+
+<a href="#" class="quote-btn">Get A Quote</a>
+
 </nav>
+
+</div>
 
 </header>
 
 <section class="hero">
 
-<h1>Welcome To Sea Fox</h1>
+<div class="overlay"></div>
 
-<p>Diving & Marine Contractor</p>
+<div class="hero-content">
 
-<a href="#" class="btn">Our Services</a>
+<h1>
+
+Professional Diving & Marine Contracting Solutions
+
+</h1>
+
+<p>
+
+Engineering Excellence Above & Below The Water Surface
+
+</p>
+
+<div class="buttons">
+
+<a href="#services" class="btn1">
+
+Our Services
+
+</a>
+
+<a href="#contact" class="btn2">
+
+Contact Us
+
+</a>
+
+</div>
+
+</div>
 
 </section>
 
+<section class="about" id="about">
+
+<div class="container">
+
+<div class="about-text">
+
+<h2>
+
+About Sea Fox
+
+</h2>
+
+<p>
+
+Sea Fox is a professional Diving & Marine Contracting company delivering reliable engineering solutions for ports, offshore projects, underwater inspections, ship maintenance, marine construction and salvage operations across Egypt.
+
+</p>
+
+<ul>
+
+<li>✔ Certified Professional Divers</li>
+
+<li>✔ IMCA Safety Standards</li>
+
+<li>✔ Modern Marine Equipment</li>
+
+<li>✔ Fast & Reliable Execution</li>
+
+</ul>
+
+</div>
+
+<div class="about-image">
+
+<img src="images/about.jpg">
+
+</div>
+
+</div>
+
+</section>
+
+<section id="services" class="services">
+
+<h2>
+
+Our Services
+
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>
+
+Marine Construction
+
+</h3>
+
+<p>
+
+Ports, Breakwaters & Marine Structures.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+
+Ship Hull Cleaning
+
+</h3>
+
+<p>
+
+Increase vessel efficiency.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+
+Underwater Inspection
+
+</h3>
+
+<p>
+
+Digital Inspection & Reports.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+
+Salvage Operations
+
+</h3>
+
+<p>
+
+Ship Recovery & Heavy Lifting.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+
+Underwater Cutting
+
+</h3>
+
+<p>
+
+Professional Cutting Solutions.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+
+Marine Repairs
+
+</h3>
+
+<p>
+
+Concrete & Steel Structures.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="gallery" id="gallery">
+
+<h2>
+
+Projects Gallery
+
+</h2>
+
+<div class="gallery-box">
+
+<img src="images/gallery1.jpg">
+
+<img src="images/gallery2.jpg">
+
+<img src="images/gallery3.jpg">
+
+<img src="images/gallery4.jpg">
+
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2>
+
+Contact Us
+
+</h2>
+
+<p>
+
+Phone / WhatsApp
+
+</p>
+
+<h3>
+
+01067087160
+
+</h3>
+
+<p>
+
+Landline
+
+</p>
+
+<h3>
+
+03-5682800
+
+</h3>
+
+<a class="whatsapp"
+
+href="https://wa.me/201067087160"
+
+target="_blank">
+
+WhatsApp Now
+
+</a>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Sea Fox Diving & Marine Contracting. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
